@@ -11,6 +11,7 @@ body {
 body {
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
+  --black-Desktop: hsl(240, 6%, 8%);
 
   display: grid;
   place-items: center;
