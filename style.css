@@ -15,7 +15,13 @@ body {
   display: grid;
   place-items: center;
 }
+#belt {
+  opacity: 0;
+}
 
+#break {
+  opacity: 0;
+}
 main {
   background: url(images/background.svg) no-repeat center/cover;
   width: 100vw;
@@ -81,4 +87,52 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+/** Versão Desktop ******************/
+@media (min-width: 960px) {
+  body {
+    background-image: url(images/Desktop.svg);
+    background-position: center top;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-color: var(--black-Desktop);
+
+    display: grid;
+    place-items: center;
+  }
+
+  #belt {
+    opacity: 1;
+    position: absolute;
+    top: -160px;
+
+    height: 185px;
+
+    z-index: 5;
+  }
+  #break {
+    opacity: 1;
+
+    width: 4.5rem;
+    z-index: 4;
+  }
+  main {
+    background-image: url(images/background.svg) no-repeat center/cover;
+
+    width: 22.375rem;
+    height: 33.75rem;
+
+    background-color: var(--black);
+
+    position: absolute;
+    top: 8rem;
+
+    display: grid;
+    place-items: center;
+  }
+
+  ul {
+    margin-top: 3rem;
+  }
 }
