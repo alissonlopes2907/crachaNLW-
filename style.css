@@ -35,6 +35,8 @@ main {
   margin-right: auto;
   text-align: center;
 
+  position: relative;
+  top: -11rem;
   color: var(--grey);
 }
 .avatar {
@@ -109,7 +111,7 @@ ul {
     position: absolute;
     top: -160px;
 
-    height: 185px;
+    height: 9rem;
 
     z-index: 5;
   }
@@ -117,6 +119,7 @@ ul {
     opacity: 1;
 
     width: 4.5rem;
+
     z-index: 4;
   }
   main {
@@ -133,8 +136,8 @@ ul {
     display: grid;
     place-items: center;
   }
-  
-   .container {
+
+  .container {
     max-width: 250px;
     margin-left: auto;
     margin-right: auto;
@@ -145,8 +148,7 @@ ul {
     color: var(--grey);
   }
 
-
   ul {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
